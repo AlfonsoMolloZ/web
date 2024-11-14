@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es"><!--Idioma en el que estara nuestra pagina web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Necesario para el diseño web responsive -->
+    
+    <title> Motos</title> <!-- Titulo de la pagina de motos -->
+
+    <!-- Enlazar el html con el favicom -->
+    <link rel="shortcut icon" href="imagenes_moto/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/Estilos.css"> <!-- vinculamos el html con una hoja de estilo externo -->
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <header id="barra-sup">
+        <div class="contenedor">
+            <div class="row">
+                <div class="bs-contactos">
+                    <a href="tel: 842241300555"> <i class="fa-solid fa-phone"></i> (84) 22 4130 0555</a>
+                    <a href="mailto:contact@example.com"> <i class="fa-regular fa-envelope-open"></i> contact@example.com</a>
+                    <span> <i class="fa-solid fa-clock"></i> Lunes - Viernes: 8:00 a.m. a 3:00 p.m.</span>
+                </div>
+                <div class="bs-rs">
+                    <a title="Síguenos en facebook" href="https://www.facebook.com/AlexRiderTV/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></a><!--enlaces target blank evita que te cierre la pagina cuando entras al enlace-->
+                    <a title="Síguenos en Twitter" href="https://x.com/chameleonjoy?lang=es" target="_blank"><i class="fa-brands fa-x-twitter icono-rs"></i></a>
+                    <a title="Síguenos en Youtube" href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a><!--se ingresan los iconos en vez del texto -->
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <header id="cabecera"><!-- Cabecera de la pagina de motos -->
+        <div class="contenedor"><!-- utilizamos la clase conetenedor para crear las dimensiones -->
+                <nav class="nav-bar"> <!-- Barra de navegacion: Contiene el logo y los enlaces de navegacion -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="Imagenes_moto/logo10.jpg" alt="" class="imgfluid"> <!-- logo Se convierte en enlace-->
+                    </a>
+                </div>
+                <ul class="nav-menu"><!-- Contiene el menu -->
+                
+                    <li class="nav-menu-item"><!--creamos los items del menu enlanzando el link  se le añade el incono de inicio y la animacion -->
+                        <a class="nav-menu-link pagina-activa" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="carreras.html"> <i class="fa-solid fa-motorcycle"></i> Carreras</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="informes.html"> <i class="fa-solid fa-circle-info"></i> Informes</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="eventos.html"> <i class="fa-solid fa-calendar-days"></i> Eventos</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="contactanos.html"> <i class="fa-solid fa-address-book"></i></i> Contáctanos</a>
+                    </li>
+
+                </ul> <!-- Cierra el nav-menu -->
+            </nav>  <!-- Cierra el nav-bar -->
+            <!-- <h1> Venta de  motos</h1> -->
+        </div>
+    </header>
+    
+    <section id="banner">
+        <!-- Posiscionamiento de caja hijo -->
+        <div class="banner-padre">
+            <img src="Imagenes_moto/banner1.jpg" alt="moto1" class="imgfluid">
+            <!--Posicionamiento de caja hijo-->
+            <div class="banner-hijo">
+                <h3 class="texto-banner"> <span class="texto-banner-resaltado">No</span>s unimos<span class="texto-banner-resaltado"> en </span> el  viaje - 20<span class="texto-banner-resaltado">25</span> </h3>
+                <p>
+                    ¡Nos unimos en el viaje hacia el 2025 y más allá! En nuestra página encontrarás todo lo que un apasionado de las motos necesita: noticias, consejos,
+                    y las mejores rutas para explorar sobre dos ruedas. Aquí no solo compartimos 
+                    una afición, sino también el espíritu de libertad, aventura y camaradería que 
+                    caracteriza a la comunidad de motociclistas. Prepárate para descubrir nuevas 
+                    rutas, mantener tu moto en su mejor estado y conectar con otros viajeros en esta 
+                    experiencia única. ¡Bienvenido a bordo y que comience el viaje!
+                    </p>            
+                </div>
+        </div>
+    </section>
+
+    <!-- Seccion de presentacion -->
+    <section id="inicio" class="espaciado">
+        <div class="contenedor">
+            <h2>Bienvenido a la casa de  motos - Lima</h2>
+            <p>
+                Esta página nació con una misión clara: apoyar a todos los apasionados de 
+                las motos. Desde nuestros primeros días, buscamos ser un espacio donde 
+                cada biker pueda encontrar los mejores consejos, recomendaciones de
+                mantenimiento, y los detalles de los eventos más importantes. Creemos 
+                en el poder de la comunidad y en compartir la experiencia única de rodar 
+                juntos. Con cada artículo, guía y actualización de eventos, nos esforzamos
+                por brindar la información que todo motociclista necesita para disfrutar 
+                al máximo su viaje. ¡Bienvenidos y sigamos rodando juntos hacia nuevas 
+                aventuras!
+            </p>
+        </div>
+    </section>
+
+    <!-- seccion viaja con nosotros -->
+    <section id="Viaja" class="espaciado fondo-viaja ">
+        <div class="contenedor ">
+            <p class="texto-viaja espaciado"> <span class="texto-viaja-resaltado">!VIAJA</span> CON <span class="texto-viaja-resaltado">NOSOTROS!</span> <br>
+                <span class="texto-viaja-resaltado">LURIN</span> LLAMANDO<br><!--Le aplicamos el span para modificar el tamaño del texto y br para salto de fila -->
+                SUMATE <span class="texto-viaja-resaltado">A ESTA</span></SPAn> AVENTURA
+            </p>
+        </div>
+    </section>
+
+    <!-- seccion de pilotos -->
+    <!-- secction#pilotos.espaciado>div.contenedor>h2+p -->
+    <section id="pilotos" class="espaciado">
+        <div class="contenedor">
+            <h2>Nuestros pilotos</h2>
+            <p class="texto-centrado">
+                n nuestra comunidad, hemos elegido a pilotos excepcionales 
+                para representarnos. Son motociclistas capaces, resilientes, y 
+                apasionados por apoyar a los demás en cada paso del camino. 
+                Con una gran experiencia y dedicación, estos pilotos no solo 
+                destacan en la pista, sino también por su compromiso con la 
+                comunidad. Cada uno de ellos aporta su conocimiento, motivación 
+                y espíritu de compañerismo, inspirando a otros a superar desafíos 
+                y a disfrutar del viaje.
+            </p>
+
+            <!-- caja flexbox -->
+            <div class="row del-padded">
+                <!-- Columnas -->
+                <div class="col">
+                    <div class="img-container"> <!-- Se utiliza para agrupar la imagen y el texto haciendo posible la superposicion del texto -->
+                        <img src="Imagenes_moto/Pilotos16.jpg" class="imgfluid">
+                        <div class="texto-superpuesto">
+                            <p>uomo d'acciaio</p> <!-- Este es el texto que aparecera cuando se ponga el mouse encima de la imagne -->
+                        </div>
+                    </div>
+                    <h3>Valentino Rossi</h3>
+                    <p>
+                        Valentino es un intrepido piloto italiano que practica Motociclismo 
+                        Deportivo , su apodo traducido al español significa "Hombre de Acero"
+                        , debido a que ha sufrido 5 accidentes en la pista saliendo solo con 
+                        lesiones menores.
+                    </p>                
+                </div>
+
+                <div class="col">
+                    <div class="img-container"> <!-- Se utiliza para agrupar la imagen y el texto haciendo posible la superposicion del texto -->
+                        <img src="Imagenes_moto/pilotos17.jpg" class="imgfluid">
+                        <div class="texto-superpuesto">
+                            <p>Ghost Rider</p> <!-- Este es el texto que aparecera cuando se ponga el mouse encima de la imagne -->
+                        </div>
+                    </div>
+                    <h3>Jhon Doe</h3>
+                    <p>
+                        Jhon es un motociclista americano que cuenta con una Harley-Davidson Panhead
+                        que el mismo modifico para parecerse a la motocicleta del personaje de comics
+                        Ghost Rider.
+                    </p>                
+                </div>
+
+                <div class="col">
+                    <div class="img-container"> <!-- Se utiliza para agrupar la imagen y el texto haciendo posible la superposicion del texto -->
+                        <img src="Imagenes_moto/pilotos18.jpg" class="imgfluid">
+                        <div class="texto-superpuesto">
+                            <p>106</p> <!-- Este es el texto que aparecera cuando se ponga el mouse encima de la imagne -->
+                        </div>
+                    </div>
+                    <h3>Joseph Arratea</h3>
+                    <p>
+                        Joseph es un practicante peruano de motocross que ha competido por toda America
+                        Europa , se le conoce como "106" debido a que en total se ha roto 106 huesos en
+                        todo el tiempo que lleva como piloto.
+                    </p>                
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de iconografia -->
+    <section id="bloq-iconografia" class="iconografia">
+        <div class="contenedor">
+            <h2>Bloque de Iconografía</h2>
+            <p class="description">
+                Estos iconos los encontraras frecuente mente en nuestra pagina web
+                te ayudaremos a entender su significado.
+            </p>                
+                <div class="circuitos del-padded">
+                    <div class="iconos">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <h3>Motos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </div>
+
+                    <div class="iconos">
+                        <i class="fa-solid fa-helmet-un"></i>
+                        <h3>Casco</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </div>
+
+                    <div class="iconos">
+                        <i class="fa-solid fa-headphones"></i>
+                        <h3>Audio</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </div>
+
+                    <div class="iconos">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h3>Mantenimiento</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </div>
+                </div>
+                
+            <button class="btn">
+                Mas servicios disponibles <i class="fa-solid fa-share-from-square"></i>
+            </button>
+        </div>
+    </section>
+
+        <!-- -------------------------------------------------- -->
+            <!-- Seccion de eleginos -->
+    <section id="eleginos" class="espaciado">
+        <div class="contenedor">
+
+            <div class="colum del-padded">
+                <!-- Columna 1: Título, iconos, subtítulos y párrafos -->
+                <div class="columna text-columna ">
+                    <h2>Lo que nos hace especiales</h2>
+
+                    <div class="elemento">
+                        <i class="fa-solid fa-volume-off"></i>
+                        <div>
+                            <h3>Musica</h3>
+                            <p>
+                                Contamos con bandas de los mismos motociclistas que
+                                nos permiten usar sus canciones para los videos y/o competencias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="elemento">
+                        <i class="fa-solid fa-key"></i>
+                        <div>
+                            <h3>Seguridad</h3>
+                            <p>
+                                Nos preocupamos por la seguridad de los bikers por eso
+                                siempre recomendamos los mejores productos del mercado 
+                                para mantenerlos asalvo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="elemento">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3>Site</h3>
+                            <p>
+                                Contamos con distintas localidades que permite una mayor asistencia y
+                                cobertura de clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Columna 2: Video de YouTube -->
+                <div  class="columna video-columna">
+                    <video muted autoplay loop class="ajustar-video">
+                        <source src="video/videomoto2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- -------------------------------------------------- -->
+    
+        
+    <!-- Presentacion de pilotos -->
+    <section id="presentacion">
+        <div class="row">
+            <div class="col fonfo-presentacion espaciado titulo-foto-presentacion">
+                <h3>QUIERES SER EL PROXIMO RIDER?!</h3>
+            </div>
+            <div class="col espaciado ">
+                <div class="contenedor">
+                    <h2>Revelacion de pilotos</h2>
+                    <p>
+                        Para ser considerado como candidato a Biker Representante, 
+                        es necesario contar con una sólida trayectoria y un nombre 
+                        reconocido dentro de nuestra comunidad. Solo aquellos que 
+                        han demostrado dedicación, respeto y compromiso con los 
+                        valores de nuestra comunidad podrán formar parte de esta 
+                        élite de pilotos representativos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de nuestro conductores  -->
+    <section id="conductores" class="espaciado">
+        <div class="contenedor"><!--se crea  la fila con salto de linea para las columnas en total 15 fotos tres por fila -->
+            <h2>Nuestros conductores</h2>
+            <p>             </p>
+            <!-- div.row>div.col*15>img[src='imagenes_moto/pilotos$.jpg'].imgfluid -->
+            <div class="row del-padded">
+                <div class="col col-33"><img src="imagenes_moto/conductor1.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor2.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor3.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor4.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor5.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor6.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor7.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor8.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor9.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor10.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor11.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor12.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor13.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor14.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor15.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor16.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor17.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor18.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor19.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor20.jpg" alt="" class="imgfluid"></div>
+                <div class="col col-33"><img src="imagenes_moto/conductor21.jpg" alt="" class="imgfluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section#eventos.espaciado>div.contenedor>row>div*3 -->
+    <section id="eventos" class="espaciado">
+        <div class="contenedor">
+            <h2>Cuenta regresiva: Próximos eventos</h2>
+            <p>
+                
+            </p>
+            <row class="row del-padded">
+                <div class="col">
+                    <div class="eventos-padre ocultar-desborde">
+                        <img src="imagenes_moto/evento11.jpg" alt="" class="imgfluid">
+                        <div class="eventos-hijo">
+                            <p>
+                                Proxima filmacion 17/12/2024
+                                <br>
+                                <a href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a>
+                                <a href="https://demo2.wpopal.com/lexrider/contact/" target="_blank"><i class="fa-brands fa-twitter icono-rs"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Filmacion de pilotos</h3>
+                </div>
+
+                <div class="col">
+                    <div class="eventos-padre ocultar-desborde">
+                        <img src="imagenes_moto/evento12.jpg" alt="" class="imgfluid">
+                        <div class="eventos-hijo">
+                            <p>
+                                Proxima Charla 28/11/2024
+                                <br>
+                                <a href="https://demo2.wpopal.com/lexrider/contact/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></i></a>
+                                <a href="https://demo2.wpopal.com/lexrider/contact/#" target="_blank"><i class="fa-solid fa-envelope-open-text icono-rs"></i></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Charla de pilotos</h3>
+                </div>
+
+                <div class="col">
+                    <div class="eventos-padre ocultar-desborde">
+                        <img src="imagenes_moto/evento13.jpg" alt="" class="imgfluid">
+                        <div class="eventos-hijo">
+                            <p>
+                                TALLERES 24 HORAS 
+                                <br>
+                                <a href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a>
+                                <a href="https://demo2.wpopal.com/lexrider/contact/" target="_blank"><i class="fa-brands fa-google-plus icono-rs"></i></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Taller de motos</h3>
+                </div>
+            </row>
+        </div>
+    </section>
+
+    
+    <!-- seccion de contactos -->
+    <section id="contacto" class="espaciado">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingresa tu Nombre" id="nombre" name="nombre" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" placeholder="ejemplo@correo.com"  id="email" name="email" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" placeholder="En que te podemos ayudar ?"  name="mensaje" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de pagina -->
+    <footer id="pie" class="espaciado">
+        <div class="contenedor">
+            <div class="row">
+                <span>&copy; Motos 2024 -Todos los derechos reservados</span>
+                <div>
+                    <img src="imagenes_moto/logo10.jpg" alt="">
+                </div>
+                <div>
+                    <a title="Síguenos en facebook" href="https://www.facebook.com/AlexRiderTV/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></a><!--enlaces target blank evita que te cierre la pagina cuando entras al enlace-->
+                    <a title="Síguenos en Twitter" href="https://x.com/chameleonjoy?lang=es" target="_blank"><i class="fa-brands fa-x-twitter icono-rs"></i></a>
+                    <a title="Síguenos en Youtube" href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a><!--se ingresan los iconos en vez del texto -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Boton para relizar un scroll-up -->
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+</html>

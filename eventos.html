@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es"><!--Idioma en el que estara nuestra pagina web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Necesario para el diseño web responsive -->
+    
+    <title> Motos</title> <!-- Titulo de la pagina de motos -->
+
+    <!-- Enlazar el html con el favicom -->
+    <link rel="shortcut icon" href="imagenes_moto/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/Estilos.css"> <!-- vinculamos el html con una hoja de estilo externo -->
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <header id="barra-sup">
+        <div class="contenedor">
+            <div class="row">
+                <div class="bs-contactos">
+                    <a href="tel: 842241300555"> <i class="fa-solid fa-phone"></i> (84) 22 4130 0555</a>
+                    <a href="mailto:contact@example.com"> <i class="fa-regular fa-envelope-open"></i> contact@example.com</a>
+                    <span> <i class="fa-solid fa-clock"></i> Lunes - Viernes: 8:00 a.m. a 3:00 p.m.</span>
+                </div>
+                <div class="bs-rs">
+                    <a title="Síguenos en facebook" href="https://www.facebook.com/AlexRiderTV/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></a><!--enlaces target blank evita que te cierre la pagina cuando entras al enlace-->
+                    <a title="Síguenos en Twitter" href="https://x.com/chameleonjoy?lang=es" target="_blank"><i class="fa-brands fa-x-twitter icono-rs"></i></a>
+                    <a title="Síguenos en Youtube" href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a><!--se ingresan los iconos en vez del texto -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabecera de la pagina de motos -->
+    <header id="cabecera">
+        <div class="contenedor"><!-- utilizamos la clase conetenedor para crear las dimensiones -->
+                <nav class="nav-bar"> <!-- Barra de navegacion: Contiene el logo y los enlaces de navegacion -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="Imagenes_moto/logo10.jpg" alt="" class="imgfluid"> <!-- logo Se convierte en enlace-->
+                    </a>
+                </div>
+                <ul class="nav-menu"><!-- Contiene el menu -->
+                
+                    <li class="nav-menu-item"><!--creamos los items del menu enlanzando el link  se le añade el incono de inicio y la animacion -->
+                        <a class="nav-menu-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="carreras.html"> <i class="fa-solid fa-motorcycle"></i> Carreras</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="informes.html"> <i class="fa-solid fa-circle-info"></i> Informes</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link pagina-activa" href="eventos.html"> <i class="fa-solid fa-calendar-days"></i> Eventos</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="contactanos.html"> <i class="fa-solid fa-tv"></i> Contáctanos</a>
+                    </li>
+
+                </ul> <!-- Cierra el nav-menu -->
+            </nav>  <!-- Cierra el nav-bar -->
+            <!-- <h1> Venta de  motos</h1> -->
+        </div>
+    </header>
+
+            <!-- Titulo de la pagina interna -->
+            <section id="titulo-pagina">
+                <div class="contenedor">
+                    <h2>Eventos</h2>
+                    <span> <i class="fa-solid fa-location-dot"></i> <a href="index.html">  Inicio</a> / <i class="fa-regular fa-calendar-days"></i> Hechos</span>
+                </div>
+            </section>
+    
+    <!-- Pie de pagina -->
+    <footer id="pie" class="espaciado">
+        <div class="contenedor">
+            <div class="row">
+                <span>&copy; Motos 2024 -Todos los derechos reservados</span>
+                <div>
+                    <img src="imagenes_moto/logo10.jpg" alt="">
+                </div>
+                <div>
+                    <a title="Síguenos en facebook" href="https://www.facebook.com/AlexRiderTV/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></a><!--enlaces target blank evita que te cierre la pagina cuando entras al enlace-->
+                    <a title="Síguenos en Twitter" href="https://x.com/chameleonjoy?lang=es" target="_blank"><i class="fa-brands fa-x-twitter icono-rs"></i></a>
+                    <a title="Síguenos en Youtube" href="https://www.youtube.com/watch?v=TxoEeLn8rlY" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a><!--se ingresan los iconos en vez del texto -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Boton para relizar un scroll-up -->
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+</html>

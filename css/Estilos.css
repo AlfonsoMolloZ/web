@@ -1,0 +1,707 @@
+
+
+/* Vincular la hoja de estilos con funetes externas google font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+/*Sirve para vincular hojas de estilos con la biblbiotecas de iconos de found awesome*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+/* DECLARACION DE VARIABLES CSS */
+:root {
+    /* paleta de colores */
+    --color1: #fff;
+    --color2: #131313;
+    --color3: #d5d5d5;
+    --color4: #2d2d2d;
+    --color5: #F01943;
+    --color6: #8e8e8e;
+    --fondo-eventos1:rgba(45, 45, 45, 0.7);
+    
+      /* Tipos de fuentes */
+    --fuente1: "Teko", sans-serif;
+    --fuente2: "Noto Sans", sans-serif;
+
+    /* Gradientes */
+    --gradiente1: linear-gradient(90deg, rgba(19,19,19,0.5) 50%, rgba(255,255,255,0.5) 100%)
+
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Regla para afectar todos los elementos de la página HTML (selector universal)*/
+*{
+    padding: 0;
+    margin: 0;
+
+    /* Evita que el padding y el borde afecten el tamaño de la caja */
+    box-sizing: border-box;
+}
+
+/*Existen tres tipos de selectores de estilos*/
+/* 1) SELECTORES DE ESTILOS PARA ETIQUETA HTML*/
+html{
+    /* Suavizar el desplazamiento del scrool en la ventana */
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--fuente2);
+    font-size: 16px; /*Tamaño base =1em */
+    color:var(--color1);
+    line-height: 1.5;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* Estilos dinamicos con animaciones */
+h2{
+    letter-spacing: 5px;
+    /* margin: 10px 0; */
+    /* padding: 5px; */
+    margin-bottom: 20px;
+    animation: colorChange 3s infinite;
+    font-family: var(--fuente1);
+    font-size: 40px;
+}
+
+@keyframes colorChange {
+    0% { color: var(--color1) }
+    50% { color: var(--color3) }
+    100% { color: var(--color5) }
+}
+
+/* -------------------------------------------------------------------------- */
+p{
+    margin-bottom: 15px;
+}
+/* Elimina el espacio predeterminado que aparece debajo del objeto */
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none; /*Elimina el subrayado del enlace*/
+}
+
+/* 2) SELECTORES DE ESTILOS PARA IDENTIFICADORE (id) */
+#barra-sup {
+    background-color: var(--color5);
+    color: var(--color2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+#barra-sup .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#barra-sup a{
+    text-decoration: none;
+    color: var(--color1);
+    margin-right: 10px;
+}
+
+#cabecera{
+    background-color: var(--color2);
+    color: var(--color1);
+
+    /* Espaciado de cabecera */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    /* Pegamos la cabecera en la parte superior */
+    position: sticky;
+    top: 0px;
+    z-index: 1000; /*La caja se quede pegado encima de otra*/
+}
+
+#inicio, #pilotos, #conductores, #contacto, #eleginos{
+    color: var(--color3);
+    background-color: var(--color4);
+}
+
+#pilotos h2{
+    text-align: center;
+}
+
+#pilotos .col{
+    text-align: center;
+    
+}
+
+#presentacion{
+    background-color: var(--color2) ;
+    color: var(--color3);
+}
+
+#eventos{
+    background-color: var(--color2);
+}
+#moto-objeto-video{
+    background-color: var(--color2);
+}
+
+#conductores .col{
+    margin-bottom: 30px;
+
+}
+
+#eventos{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+#eventos .col:hover .eventos-hijo{ /*Modificar el efecto*/
+    opacity: 1; /*Vuelve a mostrar la caja*/
+
+}
+
+   /* Efecto para mover el parrafo de eventos */
+#eventos .col p {
+    transform: translate(-200px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: calc(50% - 1em);
+}
+
+#eventos .col:hover p{
+    transform: translateX(0);
+}
+
+/* Efectos para agrandar la imagen de eventos*/
+#eventos .col img{
+    transform: scale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#eventos .col:hover img{
+    transform: scale(110%);
+}
+
+#pie {
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+#pie .row{
+    justify-content: space-between;
+}
+#pie a{
+    color: var(--color1);
+}
+
+#titulo-pagina{
+    background: var(--gradiente1), url('../Imagenes_moto/viaja1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    color: var(--color3);
+    
+}
+#titulo-pagina a{
+    color: var(--color3);
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+section {
+    background-color: var(--color4);
+    
+}
+
+.texto-centrado {
+    text-align: center;
+    
+}
+/*------------------------------------------------------------------------------*/
+/*CONTACTO*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color5);
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: var(--color5);
+    color: var(--color1);
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color:var(--color4);
+}
+
+/* 3) Selector de estilos para clase (class) */
+.espaciado{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contenedor{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajusta el ancho de la imagen a su caja padre */
+.imgfluid{
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+/* Flexbox. Es una tecnologia de estilos para alinear horizontalmente */
+.row {
+
+    display: flex;
+    flex-direction:row; /*Las cajs hijos se mostraran en forma de fila*/
+    flex-wrap: wrap; /*Alineacion con salto de fila*/
+}
+
+.del-padded{
+    /* Elimina el padding-left de la primera caja hijo, y el padding-right  de la ultima */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Para las columnas tengas el mismo ancho en vertical y horizontal */
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espacio entre colores */
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Para repartir el espacio en tres columnas*/
+
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-33{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-66{
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.col-75{
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.col-100{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.nav-logo{
+    width: 200px;
+}
+
+.fonfo-presentacion{
+    background-image: url('../Imagenes_moto/viaja9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-foto-presentacion{
+    text-align: right;
+    color: var(--color5);
+    padding-top: 50px;
+    font-family: var(--fuente1);
+    font-size: 40px;
+}
+
+.fondo-viaja{
+    background: var(--gradiente1), url('../Imagenes_moto/viaja1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed; /*Fijar la imagen de fondo */
+}
+
+.texto-viaja{
+    font-size: 4em;
+    line-height: 2em;
+    color: var(--color3);
+    font-family: var(--fuente1);
+    letter-spacing: 20px;
+    text-align: center;
+    
+}
+
+.texto-viaja-resaltado{
+    color: var(--color5);
+    font-weight: bold;
+}
+/*----------------------------------------------------------------------------*/
+.texto-banner{
+    font-size: 2em;
+    line-height: 1em;
+    color: var(--color5);
+    font-family: var(--fuente1);
+    letter-spacing: 6px;
+    text-align: left;
+}
+
+.texto-banner-resaltado{
+    color: var(--color2);
+    font-weight: bold;
+}
+/*----------------------------------------------------------------------------*/
+/* Estilos Exclusivos para la barra de navegacion */
+/*----------------------------------------------------------------------------*/
+.nav-bar{
+    /* Barra principal de navegacion */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*Aliniar horrizontalmrnte los elementos*/
+    align-items: center; /*Aliniar verticalmente los elementos*/
+}
+.nav-logo{
+    max-width: 200px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none; /*Quita los marcadores de viñetas*/
+}
+
+/* Elementos del menu */
+.nav-menu-item{
+    margin-left: 10px; /*Para que no se vean los tectos pegados*/
+}
+.nav-menu-link{
+    text-decoration: none; /*Quitar el subrayado*/
+    color: var(--color3);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;/*Trancision de color de un segundo */
+}
+.nav-menu-link:hover{ /*Sub clase*/
+    background-color: var(--color5);
+    color: var(--color1);
+
+}
+/*Fin de estilos de barra de navegacion*/
+.icono-rs{
+    font-size: 2em;
+    margin-left: 10px;
+    color: var(--color1);
+}
+/*----------------------------------------------------------------------------*/
+
+/* ESTILOS PARA POSICIONAMIENTO DE CAJAS */
+.banner-padre{
+    position: relative;
+}
+.banner-hijo{
+    position: absolute;
+    width: 600px; /*Ancho de la caja hijo*/
+    background-color: var(--color3);
+    color: var(--color4);
+    padding: 30px;
+
+    /* Coordinadas de posicionamiento  (left, top, bottom y right)*/
+    bottom: -80px;
+    /* Centar la caja hijo */
+    left: calc(50% - 300px); /*3oopx es la mitad del ancho de la caja hijo*/
+}
+
+/* Ajuste general */
+.img-container {
+    position: relative;/*  permite que los elementos dentro de este contenedor (como el texto superpuesto) se posicionen de manera absoluta en relación con este contenedor     */
+    display: inline-block;/* Hace que el contenedor actúe como un bloque en línea, permitiendo que se ajuste al contenido que hay dentro  */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+
+    
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color1);
+    font-family: var(--fuente1);
+    font-size: 2em; /* tamaño de la fuente del texto */
+    text-align: center; /*Alinea el texto en el centro de su contenedo */
+    opacity: 0; /* El texto estará invisible inicialmente */
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-container:hover .imgfluid {
+    opacity: 0.5; /* La imagen se vuelve translúcida al pasar el mouse */
+}
+
+.img-container:hover .texto-superpuesto {
+    opacity: 1; /* El texto aparece al pasar el mouse */
+}
+/*----------------------------------------------------------------------------*/
+.eventos-padre{
+    position: relative; /*Fijar*/
+
+}
+.eventos-hijo{
+    position: absolute; /*Posicionar el cualquier padre de caja hijo*/
+    background-color: var(--fondo-eventos1);
+    color: var(--color1);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    opacity: 0; /*Oculta caja*/
+
+    /*Coodenadas de posicionamiento*/
+    top: 0px;
+    left: 0px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+/* Oculta el contenido que se desborde de una caja */
+.ocultar-desborde{
+    overflow: hidden;
+}
+.scroll-up{
+    width: 45px;
+    height: 45px;
+    background-color: var(--color5);
+    text-align: center;
+    line-height: 45px;
+    font-size: 1em;
+    border: 1px solid var(--color1);
+    
+
+    /* Posicionamiento del boton */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.pagina-activa{
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+/* Estilos par el formulario */
+
+.form-control{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color1);
+    color: var(--color4);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    font: inherit;
+}
+
+.form-button{
+    background-color: var(--color5);
+    color: var(--color1);
+    padding:  10px 20px;
+    font: inherit;
+    border: 1px solid var(--color1);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.form-button:hover{
+    transform: translateX(-5px);
+    background-color: var(--color2);
+}
+
+.form-contacto a{
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.form-contacto textarea{
+    resize: vertical;
+}
+
+.ajustar-video{
+    /* video responsive */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /*Mantiene la relacion de aspecto estandar (16/9)*/
+}
+
+/* ---------------------------------------------------------- */
+/* Sección de Iconos */
+.iconografia {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: var(--color2);
+}
+
+.iconografia h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: var(--color5);
+}
+
+.description {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    color: var(--color1);
+}
+
+/* Estilo de los iconos y columnas */
+.circuitos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.iconos {
+    background-color: var(--color6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconos i {
+    font-size: 5em;
+    color: var(--color5);
+    margin-bottom: 15px;
+}
+
+.iconos h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.iconos p {
+    font-size: 0.9em;
+    color: var(--color2);
+}
+
+/* Efecto HOVER */
+.iconos:hover {
+    transform: translateX(-5px);
+    opacity: 0.8;
+}
+
+/* Botón de acción */
+.btn {
+    background-color: var(--color5);
+    color: var(--color1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: var(--color4);
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* Seccion de columnas y video*/
+
+.colum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+    padding: 0px;
+}
+
+/* Columna de Texto */
+.text-columna {
+    max-width: 50%;
+}
+
+.text-columna h2 {
+    font-size: 2em;
+    color: var(--color5); /* Color del título */
+    margin-bottom: 15px;
+}
+
+.elemento {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.elemento i {
+    font-size: 4em;
+    color: var(--color5); /* Color del icono */
+    margin-right: 15px;
+}
+
+.elemento h3 {
+    font-size: 1.2em;
+    color: var(--color1); /* Color del subtítulo */
+    margin-bottom: 5px;
+}
+
+.elemento p {
+    color: var(--color6); /* Color del texto */
+    font-size: 0.9em;
+}
+
+/* Columna de Video */
+.video-columna {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-columna iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto 16:9 */
+}
+
+
